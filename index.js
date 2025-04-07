@@ -3,7 +3,9 @@ const express = require('express');
 const {login} = require("./routers/loginRoute");
 const registerUser = require("./routers/registerRoute");
 const insertLocation = require("./db/updateLocation");
-const authenticate = require("./middleware/authMiddleware")
+const authenticate = require("./middleware/authMiddleware");
+
+const logger = require('./helper/index');
 
 const app = express();
 const port = 3007;
